@@ -1,12 +1,6 @@
 name: Packaging Tests
 on:
-  push:
-    branches:
-      - main
-      - v*
-  pull_request:
-    branches:
-      - main
+ workflow_dispatch: 
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
